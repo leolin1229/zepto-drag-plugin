@@ -7,7 +7,7 @@ zepto-drag-plugin
 
 The structure of HTML like this:
 
-<code>
+```
 <div class="x-progress-track" id="progressSlider">
   <div class="x-progress-load" style="width: 0%;"></div>
   <div class="x-progress-play" style="width: 0%;"></div>
@@ -15,11 +15,11 @@ The structure of HTML like this:
     <div class="x-seek-handle"></div>
   </div>
 </div>
-</code>
+```
 
 then:
 
-<code>
+```
 $("#progressSlider").drag({
 	videoObj: H5Player.player,
   handler: '.x-progress-seek',
@@ -30,4 +30,4 @@ $("#progressSlider").drag({
  	callback2: function() {},
  	callback3: function() {}
 });
-</code>
+```
