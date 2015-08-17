@@ -18,7 +18,8 @@
       maxRight: 0, // 状态条最右边位置
       callback1: null, // touchstart回调函数
       callback2: null, // touchmove回调函数
-      callback3: null //touchend回调函数
+      callback3: null, //touchend回调函数
+      callback4: null //touchcancel回调函数
     };
     var self = $(this);
 
@@ -57,6 +58,14 @@
       target = null;
       if(typeof opts.callback3 === 'function') {
         opts.callback3.call(this);
+      }
+    });
+
+    self.on('touchcancel', function(e) {
+      e.preventDefault();
+      target = null;
+      if(typeof opts.callback4 === 'function') {
+        opts.callback4.call(this);
       }
     });
   }
