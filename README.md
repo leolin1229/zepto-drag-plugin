@@ -21,14 +21,14 @@ then:
 
 ```js
 $("#progressSlider").drag({
-	videoObj: H5Player.player,
-  handler: '.x-progress-seek',
-  range: '.x-progress-play',
-  maxLeft: 100,
- 	maxRight: 100,	
- 	callback1: function() {}, // touchstart callback
- 	callback2: function() {},	// touchmove callback
- 	callback3: function() {},	// touchend callback
- 	callback3: function() {}  // touchcancel callback
+		videoObj: H5Player.player,
+    handler: '.x-progress-seek',
+    range: '.x-progress-play',
+    maxLeft: 100,
+ 	  maxRight: 100,	
+ 	  callback1: function() {}, // touchstart callback
+ 	  callback2: function() {},	// touchmove callback
+ 	  callback3: function() {},	// touchend callback
+ 	  callback3: function() {}  // touchcancel callback
 });
 ```
